@@ -14,7 +14,7 @@ function boxShadowGenerator () {
 		insetValue = 'inset'
 	}
 	box.style.boxShadow = `${offsetX.value}px ${offsetY.value}px ${blur.value}px  ${stretch.value}px ${color.value} ${insetValue}`
-	info.textContent =  `${offsetX.value}px ${offsetY.value}px ${blur.value}px  ${stretch.value}px ${color.value}`
+	info.textContent =  `box-shadow: ${offsetX.value}px ${offsetY.value}px ${blur.value}px  ${stretch.value}px ${color.value};`
 }
 
 offsetX.addEventListener('input', boxShadowGenerator)
