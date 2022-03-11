@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+<div class="container">
+	<div class="project">
+		<div class="settings">
+			<h2 class="title">CSS BOX-SHADOW ГЕНЕРАТОР</h2>
+			<h3 class="subtitle">Настройте параметры тени:</h3>
+			<label for="outset" class="check">Внешняя</label><input type="radio" name="insetShadow" class="outset"
+																	id="outset">
+			<label for="inset" class="check">Внутренняя</label><input type="radio" name="insetShadow" class="inset"
+																	  id="inset">
+			<div class="line"></div>
+			<p class="substring">Горизонтальное смещение</p>
+			<span class="size">-100px</span>
+			<input type="range" class="horizontal shadow" min="-100" max="100">
+			<span class="size">100px</span>
+			<p class="substring">Вертикальное смещение</p>
+			<span class="size">-100px</span>
+			<input type="range" class="vertical shadow" min="-100" max="100">
+			<span class="size">100px</span>
+			<div class="line"></div>
+			<p class="substring">Размытие</p>
+			<input type="range" class="blur shadow" value="0">
+			<span class="size">100px</span>
+			<p class="substring">Растяжение</p>
+			<span class="size">-100px</span>
+			<input type="range" class="stretch shadow" min="-100" max="100">
+			<span class="size">100px</span>
+			<div class="line"></div>
+			<p class="substring">Цвет тени</p>
+			<input type="color" class="color">
+			<p class="substring">Прозрачность</p>
+			<span class="size margin">0</span>
+			<input type="range" class="opacity shadow">
+			<span class="size">1</span>
+		</div>
+		<div class="boxHead">
+			<div class="box">
+				<img class="box-img" src="./img/nature.jpeg" alt="nature">
+			</div>
+			<div class="info"> 0px 0px 0px 0px #000000</div>
+		</div>
+	</div>
+
+
+</div>
+<script src="./js/script.js"></script>
+</body>
+</html>
